@@ -1,28 +1,51 @@
 body {
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center; /* centraliza horizontal */
-  align-items: center;     /* centraliza vertical */
-  min-height: 100vh;
   background: #fff0f5;
   font-family: Arial, sans-serif;
+  overflow: hidden;
 }
 
+/* Canvas no fundo */
+#heartsCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* Container centralizado */
 .mensagem {
-  max-width: 400px;        /* controla largura da coluna */
+  position: relative;
+  z-index: 1; /* fica na frente dos corações */
+
+  max-width: 500px;
   width: 90%;
-  text-align: center;      /* centraliza o texto */
-  display: flex;
-  flex-direction: column;  /* deixa tudo em coluna */
-  gap: 15px;               /* espaçamento entre os textos */
+
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.85); /* fundo branco transparente */
+  padding: 25px;
+  border-radius: 20px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
 
+/* Título */
 h1 {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  color: #ff4d6d;
 }
 
+/* Texto */
 p {
-  margin: 0;
-  line-height: 1.6;        /* melhora leitura */
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #333;
 }
