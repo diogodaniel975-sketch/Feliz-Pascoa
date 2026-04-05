@@ -13,12 +13,13 @@ body {
   max-width: 600px;          /* largura ideal para leitura */
   text-align: justify;       /* alinhamento dos dois lados */
   background: rgba(255, 255, 255, 0.15);
-  padding: 30px;
+  padding: 40px;
   border-radius: 15px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   line-height: 1.8;
   color: #fff;
   text-shadow: 1px 1px 3px #000;
   z-index: 10;
   position: relative;
 }
+
