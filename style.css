@@ -1,10 +1,22 @@
+body {
+  margin: 0;
+  background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Georgia', serif;
+  overflow: hidden;
+}
+
 .mensagem {
-  max-width: 600px;
-  background: rgba(255, 255, 255, 0.2);
-  padding: 20px;
-  border-radius: 12px;
-  font-size: 1.2rem;
-  line-height: 1.6;
+  max-width: 700px;
+  text-align: justify;   /* deixa o texto alinhado dos dois lados */
+  background: rgba(255, 255, 255, 0.15);
+  padding: 30px;
+  border-radius: 15px;
+  font-size: 1.3rem;
+  line-height: 1.8;
   color: #fff;
   text-shadow: 1px 1px 3px #000;
   z-index: 10;
