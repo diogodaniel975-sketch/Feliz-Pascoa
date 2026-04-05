@@ -3,7 +3,11 @@ body {
   padding: 0;
   background: #fff0f5;
   font-family: Arial, sans-serif;
-  overflow: hidden;
+
+  display: flex;
+  justify-content: center; /* centraliza horizontal */
+  align-items: center;     /* centraliza vertical */
+  height: 100vh;
 }
 
 /* Canvas no fundo */
@@ -16,21 +20,17 @@ body {
   z-index: 0;
 }
 
-/* Container centralizado */
+/* Caixa do texto */
 .mensagem {
   position: relative;
-  z-index: 1; /* fica na frente dos corações */
+  z-index: 1;
 
   max-width: 500px;
   width: 90%;
 
-  margin: auto;
-  top: 50%;
-  transform: translateY(-50%);
-
   text-align: center;
 
-  background: rgba(255, 255, 255, 0.85); /* fundo branco transparente */
+  background: rgba(255, 255, 255, 0.9);
   padding: 25px;
   border-radius: 20px;
 
